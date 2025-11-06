@@ -1,0 +1,15 @@
+#pragma once
+#include "edge-impulse-sdk/classifier/ei_classifier_types.h"
+#include "edge-impulse-sdk/classifier/ei_classifier_porting.h"
+#include "edge-impulse-sdk/dsp/numpy_types.h"
+#include "edge-impulse-sdk/dsp/numpy.hpp"
+#include "model-parameters-stress/model_metadata.h"
+#include "model-parameters-stress/model_variables.h"
+
+namespace ei {
+    EI_IMPULSE_ERROR run_classifier_stress(
+        ei::signal_t* signal,
+        ei_impulse_result_t* result,
+        bool debug
+    );
+}
